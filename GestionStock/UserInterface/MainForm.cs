@@ -11,37 +11,20 @@ using System.Windows.Forms;
 namespace GestionStock.UserInterface;
 public partial class MainForm : Form
 {
+    public static Panel MainPanel;
     public MainForm()
     {
         InitializeComponent();
+        MainPanel = panel1; // Assigner le panel à la variable statique
     }
 
     private void MainForm_Load(object sender, EventArgs e)
     {
-
-    }
-
-    private void btnManageProducts_Click(object sender, EventArgs e)
-    {
-        // Utilise l'instance statique de Program
-        ProductForm productForm = new ProductForm(Program.dataManager);
-        productForm.ShowDialog(); // Ouvre comme une boîte de dialogue modale
-    }
-
-    private void btnManageCategories_Click(object sender, EventArgs e)
-    {
-        CategoryForm categoryForm = new CategoryForm(Program.dataManager);
-        categoryForm.ShowDialog();
-    }
-
-    private void btnManageOrders_Click(object sender, EventArgs e)
-    {
-        OrderForm orderForm = new OrderForm(Program.dataManager);
-        orderForm.ShowDialog();
-    }
-
-    private void btnExit_Click(object sender, EventArgs e)
-    {
-        Application.Exit();
+        Home home = new Home();
+        home.Dock = DockStyle.Fill; // Remplir le panel
+        home.TopLevel = false; // Ne pas afficher la barre de titre
+        panel1.Controls.Clear();
+        panel1.Controls.Add(home); // Ajouter le contrôle au panel
+        home.Show(); // Afficher le contrôle    
     }
 }

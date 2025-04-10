@@ -347,6 +347,13 @@ public partial class OrderForm : Form
         btnPlaceOrder.Enabled = false; // Désactiver le bouton Passer Commande
     }
 
-
-
+    private void homeButton_Click(object sender, EventArgs e)
+    {
+        Home home = new Home();
+        home.Dock = DockStyle.Fill;
+        home.TopLevel = false;
+        MainForm.MainPanel.Controls.Clear();
+        MainForm.MainPanel.Controls.Add(home);
+        home.Show();
+    }
 }

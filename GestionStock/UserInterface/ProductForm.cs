@@ -1,5 +1,6 @@
 ﻿using GestionStock.Data;
 using GestionStock.Entities;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -279,4 +280,15 @@ public partial class ProductForm : Form
         btnDeleteProduct.Enabled = false;
         txtProductName.Focus();
     }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+        Home home = new Home();
+        home.Dock = DockStyle.Fill;
+        home.TopLevel = false;
+        MainForm.MainPanel.Controls.Clear();
+        MainForm.MainPanel.Controls.Add(home);
+        home.Show();
+    }
+
 }

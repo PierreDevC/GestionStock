@@ -40,6 +40,7 @@ partial class CategoryForm
         this.label2 = new Label();
         this.txtCategoryId = new TextBox();
         this.label1 = new Label();
+        this.homeButton = new Button();
         this.groupBox1.SuspendLayout();
         this.SuspendLayout();
         // 
@@ -69,6 +70,7 @@ partial class CategoryForm
         // 
         // groupBox1
         // 
+        this.groupBox1.Controls.Add(this.homeButton);
         this.groupBox1.Controls.Add(this.btnClearForm);
         this.groupBox1.Controls.Add(this.btnDeleteCategory);
         this.groupBox1.Controls.Add(this.btnUpdateCategory);
@@ -159,6 +161,16 @@ partial class CategoryForm
         this.label1.TabIndex = 0;
         this.label1.Text = "ID : ";
         // 
+        // homeButton
+        // 
+        this.homeButton.Location = new Point(65, 332);
+        this.homeButton.Name = "homeButton";
+        this.homeButton.Size = new Size(129, 23);
+        this.homeButton.TabIndex = 8;
+        this.homeButton.Text = "revenir en arrière";
+        this.homeButton.UseVisualStyleBackColor = true;
+        this.homeButton.Click += this.homeButton_Click;
+        // 
         // CategoryForm
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
@@ -166,6 +178,7 @@ partial class CategoryForm
         this.ClientSize = new Size(800, 450);
         this.Controls.Add(this.groupBox1);
         this.Controls.Add(this.lstCategories);
+        this.FormBorderStyle = FormBorderStyle.None;
         this.Name = "CategoryForm";
         this.Text = "CategoryForm";
         this.Load += this.CategoryForm_Load;
@@ -188,4 +201,5 @@ partial class CategoryForm
     private Button btnUpdateCategory;
     private Button btnClearForm;
     private Button btnDeleteCategory;
+    private Button homeButton;
 }

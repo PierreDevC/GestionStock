@@ -28,61 +28,27 @@ partial class MainForm
     /// </summary>
     private void InitializeComponent()
     {
-        this.btnManageProducts = new Button();
-        this.btnManageCategories = new Button();
-        this.btnManageOrders = new Button();
-        this.btnExit = new Button();
+        this.panel1 = new Panel();
         this.SuspendLayout();
         // 
-        // btnManageProducts
+        // panel1
         // 
-        this.btnManageProducts.Location = new Point(388, 162);
-        this.btnManageProducts.Name = "btnManageProducts";
-        this.btnManageProducts.Size = new Size(140, 23);
-        this.btnManageProducts.TabIndex = 0;
-        this.btnManageProducts.Text = "Gérer les Produits";
-        this.btnManageProducts.UseVisualStyleBackColor = true;
-        this.btnManageProducts.Click += this.btnManageProducts_Click;
-        // 
-        // btnManageCategories
-        // 
-        this.btnManageCategories.Location = new Point(388, 205);
-        this.btnManageCategories.Name = "btnManageCategories";
-        this.btnManageCategories.Size = new Size(140, 23);
-        this.btnManageCategories.TabIndex = 1;
-        this.btnManageCategories.Text = "Gérer les Catégories";
-        this.btnManageCategories.UseVisualStyleBackColor = true;
-        this.btnManageCategories.Click += this.btnManageCategories_Click;
-        // 
-        // btnManageOrders
-        // 
-        this.btnManageOrders.Location = new Point(388, 245);
-        this.btnManageOrders.Name = "btnManageOrders";
-        this.btnManageOrders.Size = new Size(140, 23);
-        this.btnManageOrders.TabIndex = 2;
-        this.btnManageOrders.Text = "Gérer les Commandes";
-        this.btnManageOrders.UseVisualStyleBackColor = true;
-        this.btnManageOrders.Click += this.btnManageOrders_Click;
-        // 
-        // btnExit
-        // 
-        this.btnExit.Location = new Point(388, 288);
-        this.btnExit.Name = "btnExit";
-        this.btnExit.Size = new Size(140, 23);
-        this.btnExit.TabIndex = 3;
-        this.btnExit.Text = "Quitter";
-        this.btnExit.UseVisualStyleBackColor = true;
-        this.btnExit.Click += this.btnExit_Click;
+        this.panel1.Dock = DockStyle.Fill;
+        this.panel1.Location = new Point(0, 0);
+        this.panel1.Name = "panel1";
+        this.panel1.Size = new Size(930, 499);
+        this.panel1.TabIndex = 6;
         // 
         // MainForm
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
         this.AutoScaleMode = AutoScaleMode.Font;
-        this.ClientSize = new Size(800, 450);
-        this.Controls.Add(this.btnExit);
-        this.Controls.Add(this.btnManageOrders);
-        this.Controls.Add(this.btnManageCategories);
-        this.Controls.Add(this.btnManageProducts);
+        this.AutoValidate = AutoValidate.EnableAllowFocusChange;
+        this.BackColor = Color.White;
+        this.ClientSize = new Size(930, 499);
+        this.Controls.Add(this.panel1);
+        this.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+        this.FormBorderStyle = FormBorderStyle.Fixed3D;
         this.Name = "MainForm";
         this.Text = "MainForm";
         this.Load += this.MainForm_Load;
@@ -90,9 +56,5 @@ partial class MainForm
     }
 
     #endregion
-
-    private Button btnManageProducts;
-    private Button btnManageCategories;
-    private Button btnManageOrders;
-    private Button btnExit;
+    private Panel panel1;
 }

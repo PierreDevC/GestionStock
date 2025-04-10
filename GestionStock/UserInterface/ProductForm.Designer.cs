@@ -51,6 +51,7 @@ partial class ProductForm
         this.label2 = new Label();
         this.txtProductId = new TextBox();
         this.label1 = new Label();
+        this.button1 = new Button();
         this.grpProductDetails.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)this.numProductQuantity).BeginInit();
         ((System.ComponentModel.ISupportInitialize)this.numProductPrice).BeginInit();
@@ -267,13 +268,25 @@ partial class ProductForm
         this.label1.TabIndex = 0;
         this.label1.Text = "ID : ";
         // 
+        // button1
+        // 
+        this.button1.Location = new Point(856, 135);
+        this.button1.Name = "button1";
+        this.button1.Size = new Size(75, 23);
+        this.button1.TabIndex = 3;
+        this.button1.Text = "go back";
+        this.button1.UseVisualStyleBackColor = true;
+        this.button1.Click += this.button1_Click;
+        // 
         // ProductForm
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
         this.AutoScaleMode = AutoScaleMode.Font;
-        this.ClientSize = new Size(800, 450);
+        this.ClientSize = new Size(986, 450);
+        this.Controls.Add(this.button1);
         this.Controls.Add(this.grpProductDetails);
         this.Controls.Add(this.lstProducts);
+        this.FormBorderStyle = FormBorderStyle.None;
         this.Name = "ProductForm";
         this.Text = "ProductForm";
         this.Load += this.ProductForm_Load;
@@ -309,4 +322,5 @@ partial class ProductForm
     private NumericUpDown numProductPrice;
     private Label label6;
     private ComboBox cmbProductCategory;
+    private Button button1;
 }

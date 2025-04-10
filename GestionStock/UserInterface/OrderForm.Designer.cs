@@ -55,6 +55,7 @@ partial class OrderForm
         this.label1 = new Label();
         this.btnPlaceOrder = new Button();
         this.btnCancelNewOrder = new Button();
+        this.homeButton = new Button();
         this.groupBox1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)this.numQuantityToAdd).BeginInit();
         this.SuspendLayout();
@@ -294,11 +295,22 @@ partial class OrderForm
         this.btnCancelNewOrder.UseVisualStyleBackColor = true;
         this.btnCancelNewOrder.Click += this.btnCancelNewOrder_Click;
         // 
+        // homeButton
+        // 
+        this.homeButton.Location = new Point(367, 495);
+        this.homeButton.Name = "homeButton";
+        this.homeButton.Size = new Size(121, 23);
+        this.homeButton.TabIndex = 14;
+        this.homeButton.Text = "Revenir en arrière";
+        this.homeButton.UseVisualStyleBackColor = true;
+        this.homeButton.Click += this.homeButton_Click;
+        // 
         // OrderForm
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
         this.AutoScaleMode = AutoScaleMode.Font;
-        this.ClientSize = new Size(1147, 491);
+        this.ClientSize = new Size(1240, 570);
+        this.Controls.Add(this.homeButton);
         this.Controls.Add(this.btnCancelNewOrder);
         this.Controls.Add(this.btnPlaceOrder);
         this.Controls.Add(this.groupBox1);
@@ -309,6 +321,7 @@ partial class OrderForm
         this.Controls.Add(this.label9);
         this.Controls.Add(this.lblNextOrderInfo);
         this.Controls.Add(this.lblQueueInfo);
+        this.FormBorderStyle = FormBorderStyle.None;
         this.Name = "OrderForm";
         this.Text = "OrderForm";
         this.Load += this.OrderForm_Load;
@@ -347,4 +360,5 @@ partial class OrderForm
     private ColumnHeader columnHeader8;
     private Button btnPlaceOrder;
     private Button btnCancelNewOrder;
+    private Button homeButton;
 }
