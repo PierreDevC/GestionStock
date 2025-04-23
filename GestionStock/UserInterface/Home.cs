@@ -19,7 +19,7 @@ public partial class Home : Form
     private void products_Click(object sender, EventArgs e)
     {
         ProductForm productForm = new ProductForm(Program.dataManager);
-        productForm.Dock = DockStyle.Fill; 
+        productForm.Dock = DockStyle.Fill;
         productForm.TopLevel = false;
         MainForm.MainPanel.Controls.Clear();
         MainForm.MainPanel.Controls.Add(productForm);
@@ -46,12 +46,27 @@ public partial class Home : Form
         orderForm.Show();
     }
 
+    private void clientOrder_Click(object sender, EventArgs e)
+    {
+        ClientOrderForm clientOrderForm = new ClientOrderForm(Program.dataManager);
+        clientOrderForm.Dock = DockStyle.Fill;
+        clientOrderForm.TopLevel = false;
+        MainForm.MainPanel.Controls.Clear();
+        MainForm.MainPanel.Controls.Add(clientOrderForm);
+        clientOrderForm.Show();
+    }
+
     private void quit_Click(object sender, EventArgs e)
     {
         Application.Exit();
     }
 
     private void Home_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void AppName_Click(object sender, EventArgs e)
     {
 
     }

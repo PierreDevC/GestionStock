@@ -36,7 +36,7 @@ partial class MainForm
         this.panel1.Dock = DockStyle.Fill;
         this.panel1.Location = new Point(0, 0);
         this.panel1.Name = "panel1";
-        this.panel1.Size = new Size(930, 499);
+        this.panel1.Size = new Size(1217, 499);
         this.panel1.TabIndex = 6;
         // 
         // MainForm
@@ -45,12 +45,12 @@ partial class MainForm
         this.AutoScaleMode = AutoScaleMode.Font;
         this.AutoValidate = AutoValidate.EnableAllowFocusChange;
         this.BackColor = Color.White;
-        this.ClientSize = new Size(930, 499);
+        this.ClientSize = new Size(1217, 499);
         this.Controls.Add(this.panel1);
         this.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
         this.FormBorderStyle = FormBorderStyle.Fixed3D;
         this.Name = "MainForm";
-        this.Text = "MainForm";
+        this.Text = "GestionStock";
         this.Load += this.MainForm_Load;
         this.ResumeLayout(false);
     }

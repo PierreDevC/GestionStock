@@ -356,4 +356,14 @@ public partial class OrderForm : Form
         MainForm.MainPanel.Controls.Add(home);
         home.Show();
     }
+
+    private void numQuantityToAdd_ValueChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void lsvNewOrderItems_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

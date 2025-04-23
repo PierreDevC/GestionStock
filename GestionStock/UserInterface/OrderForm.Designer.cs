@@ -180,6 +180,7 @@ partial class OrderForm
         this.lsvNewOrderItems.TabIndex = 8;
         this.lsvNewOrderItems.UseCompatibleStateImageBehavior = false;
         this.lsvNewOrderItems.View = View.Details;
+        this.lsvNewOrderItems.SelectedIndexChanged += this.lsvNewOrderItems_SelectedIndexChanged;
         // 
         // columnHeader5
         // 
@@ -228,6 +229,7 @@ partial class OrderForm
         this.numQuantityToAdd.Size = new Size(199, 23);
         this.numQuantityToAdd.TabIndex = 5;
         this.numQuantityToAdd.Value = new decimal(new int[] { 1, 0, 0, 0 });
+        this.numQuantityToAdd.ValueChanged += this.numQuantityToAdd_ValueChanged;
         // 
         // label3
         // 
