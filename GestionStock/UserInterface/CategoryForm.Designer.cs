@@ -49,7 +49,7 @@ partial class CategoryForm
         this.lstCategories.Columns.AddRange(new ColumnHeader[] { this.columnHeader1, this.columnHeader2 });
         this.lstCategories.FullRowSelect = true;
         this.lstCategories.GridLines = true;
-        this.lstCategories.Location = new Point(12, 12);
+        this.lstCategories.Location = new Point(202, 44);
         this.lstCategories.MultiSelect = false;
         this.lstCategories.Name = "lstCategories";
         this.lstCategories.Size = new Size(512, 426);
@@ -70,7 +70,6 @@ partial class CategoryForm
         // 
         // groupBox1
         // 
-        this.groupBox1.Controls.Add(this.homeButton);
         this.groupBox1.Controls.Add(this.btnClearForm);
         this.groupBox1.Controls.Add(this.btnDeleteCategory);
         this.groupBox1.Controls.Add(this.btnUpdateCategory);
@@ -79,7 +78,7 @@ partial class CategoryForm
         this.groupBox1.Controls.Add(this.label2);
         this.groupBox1.Controls.Add(this.txtCategoryId);
         this.groupBox1.Controls.Add(this.label1);
-        this.groupBox1.Location = new Point(530, 12);
+        this.groupBox1.Location = new Point(720, 44);
         this.groupBox1.Name = "groupBox1";
         this.groupBox1.Size = new Size(258, 426);
         this.groupBox1.TabIndex = 1;
@@ -163,11 +162,11 @@ partial class CategoryForm
         // 
         // homeButton
         // 
-        this.homeButton.Location = new Point(65, 332);
+        this.homeButton.Location = new Point(12, 12);
         this.homeButton.Name = "homeButton";
-        this.homeButton.Size = new Size(129, 23);
+        this.homeButton.Size = new Size(81, 53);
         this.homeButton.TabIndex = 8;
-        this.homeButton.Text = "revenir en arrière";
+        this.homeButton.Text = "revenir en arrière ←";
         this.homeButton.UseVisualStyleBackColor = true;
         this.homeButton.Click += this.homeButton_Click;
         // 
@@ -175,7 +174,8 @@ partial class CategoryForm
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
         this.AutoScaleMode = AutoScaleMode.Font;
-        this.ClientSize = new Size(800, 450);
+        this.ClientSize = new Size(1237, 542);
+        this.Controls.Add(this.homeButton);
         this.Controls.Add(this.groupBox1);
         this.Controls.Add(this.lstCategories);
         this.FormBorderStyle = FormBorderStyle.None;

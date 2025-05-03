@@ -44,13 +44,14 @@ partial class ClientOrderForm
         this.label2 = new Label();
         this.txtCustomerName = new TextBox();
         this.label1 = new Label();
+        this.homeButton = new Button();
         this.groupBox1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)this.numQuantityToAdd).BeginInit();
         this.SuspendLayout();
         // 
         // btnCancelNewOrder
         // 
-        this.btnCancelNewOrder.Location = new Point(481, 427);
+        this.btnCancelNewOrder.Location = new Point(604, 430);
         this.btnCancelNewOrder.Name = "btnCancelNewOrder";
         this.btnCancelNewOrder.Size = new Size(151, 61);
         this.btnCancelNewOrder.TabIndex = 16;
@@ -60,7 +61,7 @@ partial class ClientOrderForm
         // btnPlaceOrder
         // 
         this.btnPlaceOrder.Enabled = false;
-        this.btnPlaceOrder.Location = new Point(294, 427);
+        this.btnPlaceOrder.Location = new Point(417, 430);
         this.btnPlaceOrder.Name = "btnPlaceOrder";
         this.btnPlaceOrder.Size = new Size(169, 61);
         this.btnPlaceOrder.TabIndex = 15;
@@ -78,7 +79,7 @@ partial class ClientOrderForm
         this.groupBox1.Controls.Add(this.label2);
         this.groupBox1.Controls.Add(this.txtCustomerName);
         this.groupBox1.Controls.Add(this.label1);
-        this.groupBox1.Location = new Point(288, 30);
+        this.groupBox1.Location = new Point(411, 33);
         this.groupBox1.Name = "groupBox1";
         this.groupBox1.Size = new Size(344, 391);
         this.groupBox1.TabIndex = 14;
@@ -188,11 +189,22 @@ partial class ClientOrderForm
         this.label1.TabIndex = 0;
         this.label1.Text = "Nom Client";
         // 
+        // homeButton
+        // 
+        this.homeButton.Location = new Point(12, 12);
+        this.homeButton.Name = "homeButton";
+        this.homeButton.Size = new Size(81, 53);
+        this.homeButton.TabIndex = 17;
+        this.homeButton.Text = "revenir en arrière ←";
+        this.homeButton.UseVisualStyleBackColor = true;
+        this.homeButton.Click += this.homeButton_Click;
+        // 
         // ClientOrderForm
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
         this.AutoScaleMode = AutoScaleMode.Font;
-        this.ClientSize = new Size(950, 542);
+        this.ClientSize = new Size(1237, 542);
+        this.Controls.Add(this.homeButton);
         this.Controls.Add(this.btnCancelNewOrder);
         this.Controls.Add(this.btnPlaceOrder);
         this.Controls.Add(this.groupBox1);
@@ -224,4 +236,5 @@ partial class ClientOrderForm
     private Label label2;
     private TextBox txtCustomerName;
     private Label label1;
+    private Button homeButton;
 }

@@ -287,6 +287,21 @@ public partial class ClientOrderForm : Form
         UpdatePlaceOrderButtonState(); // Désactivera btnPlaceOrder
         txtCustomerName.Focus(); // Remettre le focus sur le nom du client
     }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void homeButton_Click(object sender, EventArgs e)
+    {
+        Home home = new Home();
+        home.Dock = DockStyle.Fill;
+        home.TopLevel = false;
+        MainForm.MainPanel.Controls.Clear();
+        MainForm.MainPanel.Controls.Add(home);
+        home.Show();
+    }
 }
 
 

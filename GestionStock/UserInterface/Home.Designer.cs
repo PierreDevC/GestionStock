@@ -94,9 +94,9 @@ partial class Home
         // pictureBox1
         // 
         this.pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-        this.pictureBox1.Location = new Point(303, -10);
+        this.pictureBox1.Location = new Point(304, -78);
         this.pictureBox1.Name = "pictureBox1";
-        this.pictureBox1.Size = new Size(650, 556);
+        this.pictureBox1.Size = new Size(963, 762);
         this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         this.pictureBox1.TabIndex = 8;
         this.pictureBox1.TabStop = false;
@@ -107,7 +107,7 @@ partial class Home
         this.clientOrder.Name = "clientOrder";
         this.clientOrder.Size = new Size(258, 86);
         this.clientOrder.TabIndex = 9;
-        this.clientOrder.Text = "Faire une Commande (en tant que client)";
+        this.clientOrder.Text = "Faire une commande en tant que client (En développement)";
         this.clientOrder.UseVisualStyleBackColor = true;
         this.clientOrder.Click += this.clientOrder_Click;
         // 
@@ -115,7 +115,7 @@ partial class Home
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
         this.AutoScaleMode = AutoScaleMode.Font;
-        this.ClientSize = new Size(950, 542);
+        this.ClientSize = new Size(1237, 542);
         this.Controls.Add(this.clientOrder);
         this.Controls.Add(this.pictureBox1);
         this.Controls.Add(this.label1);

@@ -62,7 +62,7 @@ partial class ProductForm
         this.lstProducts.Columns.AddRange(new ColumnHeader[] { this.columnHeader1, this.columnHeader2, this.columnHeader3, this.columnHeader4, this.columnHeader5 });
         this.lstProducts.FullRowSelect = true;
         this.lstProducts.GridLines = true;
-        this.lstProducts.Location = new Point(12, 12);
+        this.lstProducts.Location = new Point(221, 50);
         this.lstProducts.MultiSelect = false;
         this.lstProducts.Name = "lstProducts";
         this.lstProducts.Size = new Size(512, 426);
@@ -114,7 +114,7 @@ partial class ProductForm
         this.grpProductDetails.Controls.Add(this.label2);
         this.grpProductDetails.Controls.Add(this.txtProductId);
         this.grpProductDetails.Controls.Add(this.label1);
-        this.grpProductDetails.Location = new Point(530, 12);
+        this.grpProductDetails.Location = new Point(739, 50);
         this.grpProductDetails.Name = "grpProductDetails";
         this.grpProductDetails.Size = new Size(258, 426);
         this.grpProductDetails.TabIndex = 2;
@@ -270,11 +270,11 @@ partial class ProductForm
         // 
         // button1
         // 
-        this.button1.Location = new Point(856, 135);
+        this.button1.Location = new Point(12, 12);
         this.button1.Name = "button1";
-        this.button1.Size = new Size(75, 23);
+        this.button1.Size = new Size(96, 48);
         this.button1.TabIndex = 3;
-        this.button1.Text = "go back";
+        this.button1.Text = "revenir en arrière ←";
         this.button1.UseVisualStyleBackColor = true;
         this.button1.Click += this.button1_Click;
         // 
@@ -282,7 +282,7 @@ partial class ProductForm
         // 
         this.AutoScaleDimensions = new SizeF(7F, 15F);
         this.AutoScaleMode = AutoScaleMode.Font;
-        this.ClientSize = new Size(986, 450);
+        this.ClientSize = new Size(1237, 542);
         this.Controls.Add(this.button1);
         this.Controls.Add(this.grpProductDetails);
         this.Controls.Add(this.lstProducts);
